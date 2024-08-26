@@ -47,13 +47,13 @@ function ChatbotoptionsNode({  id, data, selected, addnode }) {
 }
 
 
-function Chatbottemplateoptions({ props,id}) {
+function Chatbottemplateoptions({ id, data, selected, addnode}) {
     
    console.log(id)
     const handleAddNode = () => {
-      if (props) {
+      if (id) {
         const value="yesnooptions"
-        props(value);
+        addnode(value);
         
       }
       else{console.log("no props")}
